@@ -3,6 +3,7 @@
 
 <p align="center">
   <a href="https://huggingface.co/LaelaZ">HuggingFace</a> ·
+  <a href="https://dagshub.com/laelazorana">DagsHub</a> ·
   <a href="https://www.kaggle.com/laelazorana">Kaggle</a> ·
   <a href="https://www.linkedin.com/in/laelazorana">LinkedIn</a>
 </p>
