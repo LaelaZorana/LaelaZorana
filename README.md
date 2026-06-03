@@ -1,5 +1,5 @@
 <h1 align="center">Laela Zorana</h1>
-<p align="center"><strong>Applied ML Engineer · Production AI Systems · Cloud Infrastructure</strong></p>
+<p align="center"><strong>AI Engineer · I ship production AI products end-to-end — ML, full-stack & cloud</strong></p>
 
 <p align="center">
   <a href="https://huggingface.co/LaelaZ">HuggingFace</a> ·
@@ -12,15 +12,29 @@
 
 ## About
 
-I build production AI systems — training data pipelines, evaluation frameworks, and GPU-optimized kernels. My work sits at the intersection of applied machine learning, MLOps, and performance engineering.
+I design, build, and ship production AI products — from the model and data layer up through a polished, deployable web app. My work spans applied ML, full-stack engineering, MLOps, and AI safety/governance, with a focus on systems that are **grounded, evaluated, and trustworthy** — not demos.
 
-- Designing and validating AI training datasets (RLHF, content policy, agent scenarios)
-- Writing high-performance GPU kernels in Triton and benchmarking against PyTorch baselines
-- Building composable MLOps tooling for distributed training with DDP/FSDP and JAX
+Every featured project runs **offline with no API keys**, ships with tests + Docker + CI, and is built to one cohesive product standard.
 
 ---
 
-## Repositories
+## 🚀 Featured products
+
+| Project | What it does | Highlight |
+|---|---|---|
+| [**ParaPilot**](https://github.com/LaelaZorana/parapilot) | An Illinois divorce "legal GPS" — grounded, cited procedural navigation (state machine + RAG) | **0% hallucination** vs 100% for a plain LLM on its eval |
+| [**SupportCopilot**](https://github.com/LaelaZorana/ecom-support-copilot) | AI customer-support automation for e-commerce — citations + policy-correct refunds | **80% ticket deflection**, ~$7.8k/mo ROI on the demo |
+| [**InterviewCoach**](https://github.com/LaelaZorana/ai-interview-coach) | Paste a job description → tailored interview questions → rubric-scored answers | Full-stack app, one-click offline demo |
+| [**LLM Security Scanner**](https://github.com/LaelaZorana/llm-security-scanner) | Red-team battery for LLM apps + a NIST AI RMF / ISO 42001 governance pack | Injection / jailbreak / PII probes, severity-scored report |
+| [**Solidity Audit AI**](https://github.com/LaelaZorana/solidity-audit-ai) | AI smart-contract auditor — 10 SWC-mapped detectors + remediation, paste-a-contract UI | Static analysis + LLM, zero false positives on safe fixtures |
+| [**DistilBERT Emotion API**](https://github.com/LaelaZorana/distilbert-emotion-api) | Production inference service for an emotion classifier | ~600 req/s · p50 8 ms · Prometheus/Grafana · IaC |
+| [**CommercePipeline**](https://github.com/LaelaZorana/ecommerce-data-pipeline) | End-to-end data pipeline: DuckDB → marts → data-quality gates → dashboard | 100k+ rows · 16/16 quality gates · fails closed |
+
+*Each ships with a case-study README (problem → solution → measured results), tests, Docker, and deploy configs.*
+
+---
+
+## 🛠️ More work
 
 ### AI Quality & Evaluation
 
