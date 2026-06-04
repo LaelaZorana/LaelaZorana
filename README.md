@@ -1,5 +1,5 @@
 <h1 align="center">Laela Zorana</h1>
-<p align="center"><strong>Machine learning engineer. Full stack, from GPU kernels to production models, with honest evaluation and the MLOps that runs them.</strong></p>
+<p align="center"><strong>I build machine learning from the GPU kernel up to the model in production, and I measure where it's wrong.</strong></p>
 
 <p align="center">
   <a href="https://huggingface.co/LaelaZ">Hugging Face</a> ·
@@ -12,11 +12,11 @@
 
 ## About
 
-I take models from fine-tune to production. I train them, **evaluate them honestly on held-out data**, serve them behind a real API, and make them observable. I also work a layer down, in the GPU kernels and performance tuning that decide what a model costs to run. Most "AI" portfolios stop at a demo. Mine reports where the model is *wrong* and builds the layer that makes it deployable.
+Most AI portfolios stop at a demo. Mine starts there and keeps going. I take a model from a fine-tune to production, **evaluate it honestly on data it never saw**, serve it behind a real API, and report the cases where it's *confidently wrong*, not just the wins. Then I work a layer down, into the GPU kernels and performance tuning that decide what the model actually costs to run.
 
-Every project runs locally with one command and ships with tests + Docker + CI. Where the model is the point, the **live demo serves the real model, not a stub**.
+Every project runs locally with one command and comes with tests, Docker, and CI. Where the model is the point, the **live demo serves the real model, not a stub**.
 
-**Background:** 10+ years in technical QA, compliance auditing, and content quality (Deutsche Bank · Morningstar · Tata Capital · Accenture), now working in machine learning across the stack, from GPU kernels and model training through evaluation and MLOps. MS Cloud Computing @ Purdue *(in progress)* · AI Agents & Agentic Architecture, Vanderbilt *(2025)*. These repos are the open-source portfolio of that work, consolidated here on a fresh account.
+**Background:** I spent 10+ years in technical QA, compliance auditing, and content quality at Deutsche Bank, Morningstar, Tata Capital, and Accenture, long enough to stop trusting a result until I've seen how it was measured. I bring that same habit to machine learning, across the stack from GPU kernels and model training through evaluation and MLOps. Certification: AI Agents & Agentic AI Architecture (Python), Vanderbilt, 2025. These repos are the open-source portfolio of that work, consolidated here on a fresh account.
 
 ---
 
@@ -40,7 +40,7 @@ Fine-tune → prove it on held-out data → serve it like production.
 | [**LLM Security Scanner**](https://github.com/LaelaZorana/llm-security-scanner) · [▶ demo](https://laelaz-llm-security-scanner.hf.space) | Red-team battery for LLM apps + a NIST AI RMF / ISO 42001 governance pack | Injection / jailbreak / PII probes, severity-scored report |
 | [**CommercePipeline**](https://github.com/LaelaZorana/ecommerce-data-pipeline) · [▶ demo](https://laelaz-ecommerce-data-pipeline.hf.space) | DuckDB warehouse: staging → marts → data-quality gates → dashboard | 100k+ rows · quality gates that fail closed |
 
-*Each ships with a case-study README (problem → solution → measured results), tests, Docker, and deploy configs.*
+*Each comes with a case-study README (problem → solution → measured results), tests, Docker, and deploy configs.*
 
 ---
 
