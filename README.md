@@ -16,6 +16,8 @@ I take models from fine-tune to production: I train them, **evaluate them honest
 
 Every project runs locally with one command and ships with tests + Docker + CI. Where the model is the point, the **live demo serves the real model, not a stub**.
 
+**Background:** 10+ years in technical QA, compliance auditing, and content quality (Deutsche Bank · Morningstar · Tata Capital · Accenture), now focused on AI evaluation & MLOps. MS Cloud Computing @ Purdue *(in progress)* · AI Agents & Agentic Architecture, Vanderbilt *(2025)*. These repos are the open-source portfolio of that work, consolidated here on a fresh account.
+
 ---
 
 ## ⭐ Flagship — a model, end to end
