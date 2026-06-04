@@ -22,13 +22,13 @@ Every featured project runs **offline with no API keys**, ships with tests + Doc
 
 | Project | What it does | Highlight |
 |---|---|---|
-| [**ParaPilot**](https://github.com/LaelaZorana/parapilot) | An Illinois divorce "legal GPS" — grounded, cited procedural navigation (state machine + RAG) | **0% hallucination** vs 100% for a plain LLM on its eval |
-| [**SupportCopilot**](https://github.com/LaelaZorana/ecom-support-copilot) | AI customer-support automation for e-commerce — citations + policy-correct refunds | **80% ticket deflection**, ~$7.8k/mo ROI on the demo |
-| [**InterviewCoach**](https://github.com/LaelaZorana/ai-interview-coach) | Paste a job description → tailored interview questions → rubric-scored answers | Full-stack app, one-click offline demo |
-| [**LLM Security Scanner**](https://github.com/LaelaZorana/llm-security-scanner) | Red-team battery for LLM apps + a NIST AI RMF / ISO 42001 governance pack | Injection / jailbreak / PII probes, severity-scored report |
-| [**Solidity Audit AI**](https://github.com/LaelaZorana/solidity-audit-ai) | AI smart-contract auditor — 10 SWC-mapped detectors + remediation, paste-a-contract UI | Static analysis + LLM, zero false positives on safe fixtures |
-| [**DistilBERT Emotion API**](https://github.com/LaelaZorana/distilbert-emotion-api) | Production inference service for an emotion classifier | ~600 req/s · p50 8 ms · Prometheus/Grafana · IaC |
-| [**CommercePipeline**](https://github.com/LaelaZorana/ecommerce-data-pipeline) | End-to-end data pipeline: DuckDB → marts → data-quality gates → dashboard | 100k+ rows · 16/16 quality gates · fails closed |
+| [**ParaPilot**](https://github.com/LaelaZorana/parapilot) · [▶ demo](https://laelaz-parapilot.hf.space) | An Illinois divorce "legal GPS" — grounded, cited procedural navigation (state machine + RAG) | **0% hallucination** vs 100% for a plain LLM on its eval |
+| [**SupportCopilot**](https://github.com/LaelaZorana/ecom-support-copilot) · [▶ demo](https://laelaz-ecom-support-copilot.hf.space) | AI customer-support automation for e-commerce — citations + policy-correct refunds | **80% ticket deflection**, ~$7.8k/mo ROI on the demo |
+| [**InterviewCoach**](https://github.com/LaelaZorana/ai-interview-coach) · [▶ demo](https://laelaz-ai-interview-coach.hf.space) | Paste a job description → tailored interview questions → rubric-scored answers | Full-stack app, one-click offline demo |
+| [**LLM Security Scanner**](https://github.com/LaelaZorana/llm-security-scanner) · [▶ demo](https://laelaz-llm-security-scanner.hf.space) | Red-team battery for LLM apps + a NIST AI RMF / ISO 42001 governance pack | Injection / jailbreak / PII probes, severity-scored report |
+| [**Solidity Audit AI**](https://github.com/LaelaZorana/solidity-audit-ai) · [▶ demo](https://laelaz-solidity-audit-ai.hf.space) | AI smart-contract auditor — 10 SWC-mapped detectors + remediation, paste-a-contract UI | Static analysis + LLM, zero false positives on safe fixtures |
+| [**DistilBERT Emotion API**](https://github.com/LaelaZorana/distilbert-emotion-api) · [▶ demo](https://laelaz-distilbert-emotion-api.hf.space) | Production inference service for an emotion classifier | ~600 req/s · p50 8 ms · Prometheus/Grafana · IaC |
+| [**CommercePipeline**](https://github.com/LaelaZorana/ecommerce-data-pipeline) · [▶ demo](https://laelaz-ecommerce-data-pipeline.hf.space) | End-to-end data pipeline: DuckDB → marts → data-quality gates → dashboard | 100k+ rows · 16/16 quality gates · fails closed |
 
 *Each ships with a case-study README (problem → solution → measured results), tests, Docker, and deploy configs.*
 
