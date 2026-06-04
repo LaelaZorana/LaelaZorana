@@ -1,34 +1,42 @@
 <h1 align="center">Laela Zorana</h1>
-<p align="center"><strong>AI Engineer · I ship production AI products end-to-end — ML, full-stack & cloud</strong></p>
+<p align="center"><strong>AI / ML Engineer — production models, honest evaluation, and the MLOps layer that ships them</strong></p>
 
 <p align="center">
-  <a href="https://huggingface.co/LaelaZ">HuggingFace</a> ·
+  <a href="https://huggingface.co/LaelaZ">Hugging Face</a> ·
   <a href="https://dagshub.com/laelazorana">DagsHub</a> ·
   <a href="https://www.kaggle.com/laelazorana">Kaggle</a> ·
-  <a href="https://www.linkedin.com/in/laelazorana">LinkedIn</a>
+  <a href="https://www.linkedin.com/in/laela-zorana-362309114">LinkedIn</a>
 </p>
 
 ---
 
 ## About
 
-I design, build, and ship production AI products — from the model and data layer up through a polished, deployable web app. My work spans applied ML, full-stack engineering, MLOps, and AI safety/governance, with a focus on systems that are **grounded, evaluated, and trustworthy** — not demos.
+I take models from fine-tune to production: I train them, **evaluate them honestly on held-out data**, serve them behind a real API, and make them observable. Most "AI" portfolios stop at a demo — mine reports where the model is *wrong* and ships the layer that makes it deployable.
 
-Every featured project runs **offline with no API keys**, ships with tests + Docker + CI, and is built to one cohesive product standard.
+Every project runs locally with one command and ships with tests + Docker + CI. Where the model is the point, the **live demo serves the real model, not a stub**.
 
 ---
+
+## ⭐ Flagship — a model, end to end
+
+Fine-tune → prove it on held-out data → serve it like production.
+
+| | What it proves | Links |
+|---|---|---|
+| **distilbert-emotion** — DistilBERT fine-tuned on `dair-ai/emotion` (6 emotions) | A real fine-tune with an **honest eval: accuracy 0.920, macro F1 0.874** on 2,000 held-out examples — plus a confusion matrix, per-class precision/recall, and the model's confidently-wrong cases, all reproducible | [Model card](https://huggingface.co/LaelaZ/distilbert-emotion) · [code](https://github.com/LaelaZorana/distilbert-emotion) |
+| **Emotion Spectrum API** — the production layer around it | Serves the **real** model live · dynamic request batching · Prometheus + Grafana · health probes · load test · multi-stage Docker | [▶ live demo](https://laelaz-distilbert-emotion-api.hf.space) · [code](https://github.com/LaelaZorana/distilbert-emotion-api) |
 
 ## 🚀 Featured products
 
 | Project | What it does | Highlight |
 |---|---|---|
-| [**ParaPilot**](https://github.com/LaelaZorana/parapilot) · [▶ demo](https://laelaz-parapilot.hf.space) | An Illinois divorce "legal GPS" — grounded, cited procedural navigation (state machine + RAG) | **0% hallucination** vs 100% for a plain LLM on its eval |
-| [**SupportCopilot**](https://github.com/LaelaZorana/ecom-support-copilot) · [▶ demo](https://laelaz-ecom-support-copilot.hf.space) | AI customer-support automation for e-commerce — citations + policy-correct refunds | **80% ticket deflection**, ~$7.8k/mo ROI on the demo |
-| [**InterviewCoach**](https://github.com/LaelaZorana/ai-interview-coach) · [▶ demo](https://laelaz-ai-interview-coach.hf.space) | Paste a job description → tailored interview questions → rubric-scored answers | Full-stack app, one-click offline demo |
+| [**ParaPilot**](https://github.com/LaelaZorana/parapilot) · [▶ demo](https://laelaz-parapilot.hf.space) | Grounded, cited "legal GPS" for Illinois divorce — RAG + scope gate + citations | Anti-hallucination eval on **real Haiku-4.5: 3.8% hallucination at 85.3% groundedness** |
+| [**SupportCopilot**](https://github.com/LaelaZorana/ecom-support-copilot) · [▶ demo](https://laelaz-ecom-support-copilot.hf.space) | E-commerce support agent — RAG over catalog + policies, policy-correct refunds, escalation | **80% ticket deflection** on the seeded eval (≈280 agent-hrs/mo) |
+| [**InterviewCoach**](https://github.com/LaelaZorana/ai-interview-coach) · [▶ demo](https://laelaz-ai-interview-coach.hf.space) | Paste a job description → tailored questions → rubric-scored answers | Full-stack app, provider-agnostic, CI across 3 Python versions |
+| [**Solidity Static Auditor**](https://github.com/LaelaZorana/solidity-audit-ai) · [▶ demo](https://laelaz-solidity-audit-ai.hf.space) | Rule-based, SWC-mapped Solidity analyzer (no toolchain) + optional LLM remediation | 10 detectors · machine-readable reports for CI gating |
 | [**LLM Security Scanner**](https://github.com/LaelaZorana/llm-security-scanner) · [▶ demo](https://laelaz-llm-security-scanner.hf.space) | Red-team battery for LLM apps + a NIST AI RMF / ISO 42001 governance pack | Injection / jailbreak / PII probes, severity-scored report |
-| [**Solidity Audit AI**](https://github.com/LaelaZorana/solidity-audit-ai) · [▶ demo](https://laelaz-solidity-audit-ai.hf.space) | AI smart-contract auditor — 10 SWC-mapped detectors + remediation, paste-a-contract UI | Static analysis + LLM, zero false positives on safe fixtures |
-| [**DistilBERT Emotion API**](https://github.com/LaelaZorana/distilbert-emotion-api) · [▶ demo](https://laelaz-distilbert-emotion-api.hf.space) | Production inference service for an emotion classifier | ~600 req/s · p50 8 ms · Prometheus/Grafana · IaC |
-| [**CommercePipeline**](https://github.com/LaelaZorana/ecommerce-data-pipeline) · [▶ demo](https://laelaz-ecommerce-data-pipeline.hf.space) | End-to-end data pipeline: DuckDB → marts → data-quality gates → dashboard | 100k+ rows · 16/16 quality gates · fails closed |
+| [**CommercePipeline**](https://github.com/LaelaZorana/ecommerce-data-pipeline) · [▶ demo](https://laelaz-ecommerce-data-pipeline.hf.space) | DuckDB warehouse: staging → marts → data-quality gates → dashboard | 100k+ rows · quality gates that fail closed |
 
 *Each ships with a case-study README (problem → solution → measured results), tests, Docker, and deploy configs.*
 
@@ -55,6 +63,8 @@ Every featured project runs **offline with no API keys**, ships with tests + Doc
 | [python-perf-optimizer](https://github.com/LaelaZorana/python-perf-optimizer) | Python profiling, latency/throughput benchmarking, memory optimization, and advisor |
 
 ---
+
+**Stack:** Python · PyTorch · Transformers · scikit-learn · FastAPI · Docker · DuckDB · RAG & evaluation harnesses · Prometheus / Grafana · CI/CD
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=LaelaZorana&show_icons=true&theme=default&hide_border=true" alt="GitHub Stats" />
