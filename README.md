@@ -1,5 +1,5 @@
 <h1 align="center">Laela Zorana</h1>
-<p align="center"><strong>AI / ML Engineer — production models, honest evaluation, and the MLOps layer that ships them</strong></p>
+<p align="center"><strong>Machine learning engineer. Full stack, from GPU kernels to production models, with honest evaluation and the MLOps that runs them.</strong></p>
 
 <p align="center">
   <a href="https://huggingface.co/LaelaZ">Hugging Face</a> ·
@@ -12,11 +12,11 @@
 
 ## About
 
-I take models from fine-tune to production: I train them, **evaluate them honestly on held-out data**, serve them behind a real API, and make them observable. Most "AI" portfolios stop at a demo — mine reports where the model is *wrong* and ships the layer that makes it deployable.
+I take models from fine-tune to production. I train them, **evaluate them honestly on held-out data**, serve them behind a real API, and make them observable. I also work a layer down, in the GPU kernels and performance tuning that decide what a model costs to run. Most "AI" portfolios stop at a demo. Mine reports where the model is *wrong* and builds the layer that makes it deployable.
 
 Every project runs locally with one command and ships with tests + Docker + CI. Where the model is the point, the **live demo serves the real model, not a stub**.
 
-**Background:** 10+ years in technical QA, compliance auditing, and content quality (Deutsche Bank · Morningstar · Tata Capital · Accenture), now focused on AI evaluation & MLOps. MS Cloud Computing @ Purdue *(in progress)* · AI Agents & Agentic Architecture, Vanderbilt *(2025)*. These repos are the open-source portfolio of that work, consolidated here on a fresh account.
+**Background:** 10+ years in technical QA, compliance auditing, and content quality (Deutsche Bank · Morningstar · Tata Capital · Accenture), now working in machine learning across the stack, from GPU kernels and model training through evaluation and MLOps. MS Cloud Computing @ Purdue *(in progress)* · AI Agents & Agentic Architecture, Vanderbilt *(2025)*. These repos are the open-source portfolio of that work, consolidated here on a fresh account.
 
 ---
 
@@ -34,7 +34,7 @@ Fine-tune → prove it on held-out data → serve it like production.
 | Project | What it does | Highlight |
 |---|---|---|
 | [**ParaPilot**](https://github.com/LaelaZorana/parapilot) · [▶ demo](https://laelaz-parapilot.hf.space) | Grounded, cited "legal GPS" for Illinois divorce — RAG + scope gate + citations | Anti-hallucination eval on **real Haiku-4.5: 3.8% hallucination at 85.3% groundedness** |
-| [**SupportCopilot**](https://github.com/LaelaZorana/ecom-support-copilot) · [▶ demo](https://laelaz-ecom-support-copilot.hf.space) | E-commerce support agent — RAG over catalog + policies, policy-correct refunds, escalation | **80% ticket deflection** on the seeded eval (≈280 agent-hrs/mo) |
+| [**SupportCopilot**](https://github.com/LaelaZorana/ecom-support-copilot) · [▶ demo](https://laelaz-ecom-support-copilot.hf.space) | E-commerce support agent — RAG over catalog + policies, policy-correct refunds, escalation | **80% ticket deflection** on a seeded, synthetic eval (generated tickets, not live traffic) |
 | [**InterviewCoach**](https://github.com/LaelaZorana/ai-interview-coach) · [▶ demo](https://laelaz-ai-interview-coach.hf.space) | Paste a job description → tailored questions → rubric-scored answers | Full-stack app, provider-agnostic, CI across 3 Python versions |
 | [**Solidity Static Auditor**](https://github.com/LaelaZorana/solidity-audit-ai) · [▶ demo](https://laelaz-solidity-audit-ai.hf.space) | Rule-based, SWC-mapped Solidity analyzer (no toolchain) + optional LLM remediation | 10 detectors · machine-readable reports for CI gating |
 | [**LLM Security Scanner**](https://github.com/LaelaZorana/llm-security-scanner) · [▶ demo](https://laelaz-llm-security-scanner.hf.space) | Red-team battery for LLM apps + a NIST AI RMF / ISO 42001 governance pack | Injection / jailbreak / PII probes, severity-scored report |
