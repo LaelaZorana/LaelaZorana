@@ -12,11 +12,11 @@
 
 ## About
 
-Most AI work stops at the notebook. Mine goes a layer down, into the kernels, quantization, and distributed training that decide what a model actually costs to run, and then onto the hardware it has to run on. I write custom GPU kernels in Triton and CUDA, quantize models to fit a latency and power budget, and run distributed training in PyTorch and JAX. Lately I have been pushing that same efficiency work into vision-language-action models and reinforcement post-training, the part of robotics where every millisecond of inference is a millisecond the arm is standing still.
+Most AI work stops at the notebook. Mine goes a layer down, into the kernels, quantization, and distributed training that decide what a model actually costs to run, and then onto the hardware it has to run on. I write custom GPU kernels in Triton and CUDA, quantize models to fit a latency and power budget, and run distributed training in PyTorch and JAX. Lately I've been pushing that same efficiency work into vision-language-action models and reinforcement post-training, the part of robotics where every millisecond of inference is a millisecond the arm is standing still.
 
-Every project runs locally with one command and comes with tests, CI, and real measurements. When I report a speedup I put the baseline right next to it, and when a lever does not pay off I publish that too, because knowing where it is not is half the job.
+Every project runs locally with one command and comes with tests, CI, and real measurements. When I report a speedup I put the baseline right next to it, and when a lever doesn't pay off I publish that too, because knowing where it isn't is half the job.
 
-**Background:** a decade of model validation and risk work in regulated environments, including a bank's Chief Risk Office, which is where I learned not to trust a result until I have seen how it was measured. I bring that same habit to the systems layer now, across kernels, training, and inference. Certified in AI Agents and Agentic AI Architecture in Python (Vanderbilt, 2025).
+**Background:** a decade of model validation and risk work in regulated environments, including a bank's Chief Risk Office, which is where I learned not to trust a result until I've seen how it was measured. I bring that same habit to the systems layer now, across kernels, training, and inference. Certified in AI Agents and Agentic AI Architecture in Python (Vanderbilt, 2025).
 
 ---
 
@@ -27,13 +27,13 @@ Every project runs locally with one command and comes with tests, CI, and real m
 | | What it shows | Links |
 |---|---|---|
 | **CUDA-graph sampler** | manual graph capture of the N-step flow loop runs **5.9x over eager** (4.82 to 0.82 ms/step on a T4), beats torch.compile, replays exactly, leaks zero memory | [repo](https://github.com/LaelaZorana/embodied-efficiency) · [thesis](https://github.com/LaelaZorana/embodied-efficiency/blob/main/THESIS.md) |
-| **Weight-only low-bit, reported as a negative** | four experiments showing int4/int8 here is a memory-footprint lever (int8 2x, int4 4x smaller, under 5% action error), not a batch-1 latency win, on T4 and L4 | [results](https://github.com/LaelaZorana/embodied-efficiency/blob/main/kernel/RESULTS.md) |
+| **Weight-only low-bit, reported as a negative** | four experiments showing int4/int8 here's a memory-footprint lever (int8 2x, int4 4x smaller, under 5% action error), not a batch-1 latency win, on T4 and L4 | [results](https://github.com/LaelaZorana/embodied-efficiency/blob/main/kernel/RESULTS.md) |
 
 ---
 
 ## 🚀 Systems and performance
 
-| Project | What it is |
+| Project | What it's |
 |---|---|
 | [**triton-kernel-lab**](https://github.com/LaelaZorana/triton-kernel-lab) | Custom GPU kernels in Triton: a fused single-pass softmax (about 2x a PyTorch baseline), a tiled matmul against cuBLAS, fused activations, with a pytest suite |
 | [**mlops-training-pipeline**](https://github.com/LaelaZorana/mlops-training-pipeline) | Composable training toolkit: PyTorch and JAX trainers, experiment tracking, distributed config (DDP/FSDP) with per-device memory estimation |
@@ -63,7 +63,7 @@ Fine-tune, prove it on data it never saw, serve it like production.
 
 The rigor layer, kept where it belongs: checking my own systems, not as the headline.
 
-| Repo | What it is |
+| Repo | What it's |
 |------|-------------|
 | [ai-agent-scenario-qc](https://github.com/LaelaZorana/ai-agent-scenario-qc) | Oversight harness for autonomous-agent training scenarios: schema validation, rubric scoring, semantic defect detection |
 | [rlhf-pairwise-rater](https://github.com/LaelaZorana/rlhf-pairwise-rater) | Pairwise rating CLI for model responses: per-axis scoring, Cohen's kappa inter-rater agreement |
